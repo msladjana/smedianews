@@ -1,0 +1,121 @@
+header {
+	background: #903e40;
+}
+.admin-wrapper {
+	height: calc(100% - 66px);
+	display: flex;
+}
+.admin-wrapper .left-sidebar {
+	flex: 2;
+	height: 100%;
+}
+.admin-wrapper .left-sidebar ul {
+	list-style: none;
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+}
+.admin-wrapper .left-sidebar ul li a {
+	padding: 20px;
+	display: block;
+	font-size: 1.1rem;
+	font-weight: 400;
+	letter-spacing: .1rem;
+	border-bottom: 1px solid #bdbcbc;
+	transition: all 0.3s ease-in-out;
+	color: #3f3f3f;
+}
+.admin-wrapper .left-sidebar ul li a:hover {
+	border-bottom: 1px solid #ffffff;
+}
+.admin-wrapper .admin-content {
+	flex: 8;
+	height: 100%;
+	padding: 40px 100px 100px;
+}
+.admin-wrapper .admin-content .content {
+	height: 100vh;
+	width: 80%;
+}
+.admin-wrapper .admin-content .content .msg,
+.success,
+.error {
+	text-align: center;
+	padding: 50px 50px 0 50px;
+	margin: 0;
+}
+.admin-wrapper .admin-content .button-group {
+	float: left;
+}
+.admin-wrapper .admin-content .content h3 {
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+.admin-content form {
+	max-width: 100%;
+	width: 100%;
+	margin: 4rem 0;
+}
+table {
+	margin-top: 7rem;
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 1.1rem;
+}
+th,
+td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #d3d3d3;
+}
+.edit {
+	color: green;
+}
+.delete {
+	color: red;
+}
+.publish {
+	color: blue;
+}
+.edit:hover,
+.delete:hover,
+.publish:hover {
+	text-decoration: underline;
+}
+form div {
+	margin-bottom: 25px;
+	margin-top: 30px;
+}
+
+/* Media Query for Admin page */
+@media only screen and (max-width: 900px) {
+	.admin-wrapper {
+		display: block;
+	}
+	.admin-wrapper .left-sidebar {
+		height: auto;
+	}
+	.admin-wrapper .admin-content {
+		display: flex;
+		flex-direction: column;
+	}
+	.admin-wrapper .admin-content .content {
+		height: 100vh;
+		width: 100%;
+	}
+	.admin-wrapper .admin-content .button-group {
+		float: left;
+		display: flex;
+		flex-direction: column;
+	}
+	.admin-wrapper .admin-content .content .msg,
+	.success,
+	.error {
+		text-align: left;
+		padding: 20px 0;
+		margin: 0;
+		font-size: 1.2rem;
+	}
+}
+/*End Media Query for Admin page */
