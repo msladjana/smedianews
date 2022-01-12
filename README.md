@@ -23,12 +23,12 @@ ____
 ___
 - *Main Page*
 
-![Main Page](./screenshots/main_page.png)
+![Main Page](/screenshots/main_page.png)
 
 
 - *Admin Dashboard*
 
-![Admin Dashboard Page](./screenshots/admin_page.png)
+![Admin Dashboard Page](/screenshots/admin_page.png)
 
 _____
 
